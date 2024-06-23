@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTenTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Truyện" />
+
+    <EditText
+        android:id="@+id/editAnhBia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ảnh Bìa" />
+
+    <EditText
+        android:id="@+id/editTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tác Giả" />
+
+    <EditText
+        android:id="@+id/editNgayRaMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày Ra Mắt" />
+
+    <EditText
+        android:id="@+id/editSoChuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Chương" />
+
+    <EditText
+        android:id="@+id/editTinhTrang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tình Trạng" />
+
+    <Spinner
+        android:id="@+id/spinnerMaTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>

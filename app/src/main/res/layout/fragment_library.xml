@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:fillViewport="true"
+    tools:context=".LibraryFragment">
+
+    <FrameLayout
+        android:id="@+id/library_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:id="@+id/hor_scroll_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tatcatruyen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bitter"
+                        android:text="Tất cả truyện"
+                        android:textColor="@color/textview_select"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tieuthuyet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/bitter"
+                        android:text="Tiểu thuyết"
+                        android:textColor="@color/textview_select"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/truyenngan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/bitter"
+                        android:text="Truyện ngắn"
+                        android:textColor="@color/textview_select"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/truyenfull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/bitter"
+                        android:text="Truyện full"
+                        android:textColor="@color/textview_select"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearDSTruyenTheLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hor_scroll_menu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ScrollView>

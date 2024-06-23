@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tenChuongTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chapter Title"
+            android:textColor="@color/active_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noiDungTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="8dp"
+            android:paddingTop="20dp"
+            android:text="Chapter Content"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPreviousChapter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrowleft" />
+
+            <ImageButton
+
+                android:id="@+id/btnXemChuong"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/list" />
+
+            <ImageButton
+                android:id="@+id/btnNextChapter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrowright" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="active_color">#3F43FF</color>
+    <color name="inactive_color">#7679FF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="pink_trans">#FCE9FF</color>
+    <color name="red">#F44336</color>
+    <color name="blue_trans">#C6CEEF</color>
+</resources>

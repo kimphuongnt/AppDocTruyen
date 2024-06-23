@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KP_Home"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminTaiKhoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDanhMucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGiaoDienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateTruyenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTruyenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TruyenDaLuuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChuongDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoiDungTruyenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangNhapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TruyenMoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TruyendetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

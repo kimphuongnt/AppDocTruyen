@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin nhóm"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/member1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Công Danh - 2001215650"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/member2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Thị Kim Phượng - 2001216067"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/member3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lư Trần Đăng Khoa - 2001210944"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/member4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phạm Nguyễn Thanh Tùng - 2001216288"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+</LinearLayout>

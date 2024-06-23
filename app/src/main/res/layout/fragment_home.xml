@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/linear_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/letterR"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/chur">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/letterE"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/chue">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/letterA"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/chua">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/letterD"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/chud">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/letterChamThan"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-10dp"
+                    android:src="@drawable/letterchamthan">
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toRightOf="@+id/linear_logo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/search_img">
+
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/profile_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_img">
+
+                </ImageButton>
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_top_home"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <ViewFlipper
+                android:id="@+id/flip"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="80dp"
+                android:autoStart="true"
+                android:flipInterval="1500"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/bannerCoTien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_co_tien" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/bannerLongVuong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_long_vuong_truy_the" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/bannerHa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_ha" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/bannerVanTuong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_van_tuong" />
+                </androidx.cardview.widget.CardView>
+            </ViewFlipper>
+
+            <LinearLayout
+                android:id="@+id/linearNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flip">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/star">
+
+                </ImageView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bitter"
+                    android:text="NEW"
+                    android:textColor="#384CBA"
+                    android:textSize="30dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/xemthem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:text="Xem thêm >"
+                    android:textColor="#384CBA"
+                    android:textSize="15dp"></TextView>
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hor_scroll_new"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearNew">
+
+                <LinearLayout
+                    android:id="@+id/linearDSTruyenTheLoai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hor_scroll_new">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/star"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bitter"
+                    android:text="THỂ LOẠI"
+                    android:textColor="#384CBA"
+                    android:textSize="30sp"></TextView>
+
+                <Spinner
+                    android:id="@+id/spinner_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearDSTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearTL"></LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ScrollView>
